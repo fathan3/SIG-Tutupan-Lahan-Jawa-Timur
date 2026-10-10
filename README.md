@@ -43,7 +43,8 @@ psd-uas/
 │
 ├── app.py                        # Skrip aplikasi dashboard Streamlit
 ├── requirements.txt              # Daftar dependensi runtime Python
-├── psd.ipynb                     # Notebook alur analisis data end-to-end
+├── psd.ipynb                     # Notebook alur analisis data end-to-end (CRISP-DM)
+├── deployment_streamlit.ipynb    # Notebook panduan step-by-step deployment Streamlit
 └── README.md                     # Dokumentasi teknis proyek
 ```
 
