@@ -1,0 +1,13 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Data mentah berukuran besar
+*.zip
+*.tif
+*.tiff
+data/
+scratch/
