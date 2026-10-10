@@ -417,8 +417,10 @@ with tab_analisis:
             kelas_order = ["Sawah", "Bangunan", "Lahan Hijau", "Danau", "Perairan Terbuka", "Mangrove"]
             data_per_kelas = [df_eval[df_eval["kelas"] == k]["keyakinan_max"].dropna().values for k in kelas_order]
             
-            bp = ax_box.boxplot(data_per_kelas, labels=kelas_order, patch_artist=True,
+            bp = ax_box.boxplot(data_per_kelas, patch_artist=True,
                                 medianprops=dict(color="#0f172a", linewidth=1.5))
+            ax_box.set_xticks(range(1, len(kelas_order) + 1))
+            ax_box.set_xticklabels(kelas_order)
             for patch, k in zip(bp['boxes'], kelas_order):
                 patch.set_facecolor(WARNA_KELAS[k])
                 patch.set_alpha(0.85)
