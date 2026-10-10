@@ -34,11 +34,6 @@ st.markdown("""
         color: #0f172a;
     }
     
-    /* Sembunyikan tombol Deploy bawaan agar tidak mengganggu penggunaan lokal */
-    .stAppDeployButton, [data-testid="stAppDeployButton"] {
-        display: none !important;
-    }
-    
     /* Hero Command Banner */
     .hero-banner {
         background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #1e3a8a 100%);
