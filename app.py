@@ -340,18 +340,14 @@ tab_peta, tab_analisis, tab_simulator, tab_wilayah, tab_audit = st.tabs([
 # MODUL 1: STUDIO PETA GEOSPASIAL (DUAL-VIEW SELECTOR)
 # ------------------------------------------------------------------------------
 with tab_peta:
-    col_ctrl1, col_ctrl2 = st.columns([2, 1])
-    with col_ctrl1:
-        pilihan_peta = st.radio(
-            "Pilih Mode Tampilan Peta Interaktif:",
-            options=[
-                "Peta 1: Evaluasi Poligon Sampel & Status Data Uji (300 Poligon Geometri)",
-                "Peta 2: Sebaran Spasial Regional Jawa Timur (Citra Satelit Jernih)"
-            ],
-            horizontal=True
-        )
-    with col_ctrl2:
-        st.caption("Gunakan kontrol layer di pojok kanan atas peta untuk menyaring kelas atau mengubah basemap.")
+    pilihan_peta = st.radio(
+        "Pilih Mode Tampilan Peta Interaktif:",
+        options=[
+            "Peta 1: Evaluasi Poligon Sampel & Status Data Uji (300 Poligon Geometri)",
+            "Peta 2: Sebaran Spasial Regional Jawa Timur (Citra Satelit Jernih)"
+        ],
+        horizontal=True
+    )
 
     if "Peta 1" in pilihan_peta:
         st.markdown("""<div class='feature-card'>
