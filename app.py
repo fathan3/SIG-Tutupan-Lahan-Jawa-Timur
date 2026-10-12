@@ -363,8 +363,8 @@ Menampilkan 300 geometri poligon sampel tutupan lahan asli. Poligon dengan <b>ga
             st.error("Berkas 'peta_evaluasi_poligon_fuzzy.html' tidak ditemukan.")
     else:
         st.markdown("""<div class='feature-card'>
-<div class='card-title'>Peta 2: Sebaran Spasial Regional Jawa Timur</div>
-Menampilkan orientasi makro sebaran 300 titik observasi di seluruh daratan dan pesisir Jawa Timur di atas citra satelit resolusi tinggi asli (Google Hybrid & Esri World Imagery) dengan batas teritorial resmi provinsi. Citra satelit tampil jernih tanpa tutupan pewarnaan raster artifisial.
+<div class='card-title'>Peta 2: Klasifikasi Tutupan Lahan Skala Regional Jawa Timur (Supervised Fuzzy ImageOverlay)</div>
+Menampilkan hasil inferensi spasial tutupan lahan skala regional berbasis <b>Supervised Fuzzy Logic Classifier (m=2.0)</b> mencakup seluruh daratan Jawa Timur dan perairan sekitarnya. Lapisan raster klasifikasi ditampilkan secara georeferensi (opasitas 65%) di atas citra satelit resolusi tinggi dengan pewarnaan 6 kelas presisi: <b>Sawah (Kuning)</b> pada dataran pertanian aluvial, <b>Bangunan (Merah)</b> pada pusat aglomerasi perkotaan (Surabaya, Malang, Sidoarjo, dll), <b>Hutan / Lahan Hijau (Hijau Tua)</b> pada pegunungan vulkanik dan hutan konservasi, <b>Mangrove (Ungu)</b> pada ekoton pasang surut pesisir, <b>Danau (Biru Muda)</b> pada waduk dan badan air daratan, serta <b>Perairan Terbuka / Laut (Biru Tua)</b>.
 </div>""", unsafe_allow_html=True)
         
         f_peta2 = cari_file("peta_regional_jawatimur_fuzzy.html")
